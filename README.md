@@ -80,6 +80,8 @@ Dark theme optimized for professional AI research and development!
 - **Remove tracking** data
 - **Clean metadata** for privacy
 - **Preserve functionality** while removing surveillance
+- **File integrity monitoring** (detect mysterious code changes)
+- **Offline security** (no internet required for protection)
 
 ### 💿 **Virtual Filesystem**
 - **Mount GGUF** as editable directory structure
@@ -93,11 +95,11 @@ Dark theme optimized for professional AI research and development!
 
 ```
 GGUF Extractor/
-├── gguf_extractor.py    # 🧠 Core extraction engine
-├── gguf_cli.py          # 🔧 Command line interface
-├── gguf_gui.py          # 🖥️ Graphical interface
-├── README.md            # 📖 This file
-└── examples/            # 📚 Usage examples
+├── gguf_extractor.py          # 🧠 Core extraction engine
+├── gguf_cli.py                # 🔧 Command line interface
+├── gguf_gui.py                # 🖥️ Graphical interface
+├── file_integrity_monitor.py  # 🛡️ File integrity protection
+├── README.md                  # 📖 This file
 ```
 
 ---
@@ -195,6 +197,31 @@ Virtual Mount Structure:
 - **Validation**: Integrity checks before repackaging
 - **Backup creation**: Automatic backup of original metadata
 
+### **🛡️ File Integrity Monitor**
+Protects your GGUF Extractor files from mysterious changes:
+
+```bash
+# Create security baseline
+python file_integrity_monitor.py baseline
+
+# Check for mysterious modifications
+python file_integrity_monitor.py
+```
+
+**Detects:**
+- **VSCode auto-formatting** changes
+- **Microsoft silent updates** 
+- **OneDrive sync corruption**
+- **Extension interference**
+- **Mysterious deletions/modifications**
+
+**Features:**
+- **SHA256 hashing** for accurate detection
+- **No internet required** - works completely offline
+- **No git dependency** - pure Python solution
+- **Baseline comparison** system
+- **Detailed change reporting**
+
 ---
 
 ## 🚨 Known Limitations & Reality Check
@@ -284,5 +311,6 @@ MIT License - Feel free to use, modify, and distribute!
 
 ---
 
-**🔧 Happy GGUF editing! May your tokenizers be forever fixed and your models telemetry-free! 🛡️🧠⚡**
+- **Follow me on X @CuppaTeaCuppa**
 
+**🔧 Happy GGUF editing! May your tokenizers be forever fixed and your models telemetry-free! 🛡️🧠⚡**
