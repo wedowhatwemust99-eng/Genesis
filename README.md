@@ -1,6 +1,3 @@
-# Genesis
-ULTIMATE-GGUF-EXTRACTOR
-
 # ULTIMATE GGUF EXTRACTOR & VIRTUAL FILESYSTEM
 
 ## The Revolutionary GGUF Editing Toolkit
